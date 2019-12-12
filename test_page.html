@@ -11,7 +11,7 @@
 
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 30, bottom: 20, left: 50},
-    width = 460 - margin.left - margin.right,
+    width = 1500 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
@@ -43,7 +43,7 @@ d3.csv("https://raw.githubusercontent.com/survive-eating-out-chicago/survive-eat
 
   // Add Y axis
   var y = d3.scaleLinear()
-    .domain([0, 60])
+    .domain([0, 1])
     .range([ height, 0 ]);
   svg.append("g")
     .call(d3.axisLeft(y));
@@ -51,7 +51,7 @@ d3.csv("https://raw.githubusercontent.com/survive-eating-out-chicago/survive-eat
   // color palette = one color per subgroup
   var color = d3.scaleOrdinal()
     .domain(subgroups)
-    .range(['#C7EFCF','#FE5F55','#EEF5DB'])
+    .range(['red','orange','green'])
 
   //stack the data? --> stack per subgroup
   var stackedData = d3.stack()
