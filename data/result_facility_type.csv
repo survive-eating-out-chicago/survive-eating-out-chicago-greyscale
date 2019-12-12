@@ -1,5 +1,4 @@
-group,Nitrogen,normal,stress
-banana,12,1,13
-poacee,6,6,33
-sorgho,11,28,12
-triticum,19,6,1
+Facility Type,Fail,Pass w/ Conditions,Pass
+Bakery,0.24406645569620253,0.13291139240506328,0.6230221518987342
+Catering Establishment,0.19238476953907815,0.1593186372745491,0.6482965931863728
+Coffeeshop,0.275,0.15,0.575
