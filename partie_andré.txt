@@ -1,0 +1,11 @@
+- plot : Number of outcomes per facility type (complete version) + insights = medical & general
+
+- Number of outcomes per reinspection + interpretation
+
+- Number of outcomes per Risk + what's risk ? + Interpretation
+
+- Outcomes per cuisine : juste intro 
+
+- Price : interp = price does not chage outcome after all 
+
+- Rating: interp = rating doesn't really influence the outcome, but it does reflect the quality 
