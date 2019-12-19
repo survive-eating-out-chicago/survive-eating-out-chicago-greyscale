@@ -95,14 +95,13 @@
       </div>
 
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <iframe src="graphs/facilitytype.html" height="700" width="700" style="border:none;"></iframe>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4> Establishment types</h4>
             <p class="text-black-70 mb-0">Does <strong>the type of an establishment</strong> influence its inspection outcome? </p><p> <strong>Some insights:</strong> Medical establishments do not get passes with conditions. They either get passes or fails. This makes sense as food sanitation is a top priority in medical establishments given that most of their customers are patients.Medical establishments also have the highest number of failed inspections. This might be due to a stricter approach taken with them given that food cleaniness is the top priority for such facilities.On average the proportions of results seem very different in terms of type of establishment. But we can notice establishment types which form groups that have similar distributions of results. For example, restaurants, religious establishments and retirement homes seem to have very similar result distributions.</p> 
           </div>
         </div>
-        <!---<iframe src="img/facility_attributes.png" class="img-fluid" alt="" height=700 width=700>--->
-        <iframe src="graphs/facilitytype.html" height="700" width="700" style="border:none;"></iframe>
       </div>
 
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
@@ -113,10 +112,11 @@
           </div>
         </div>
         <!-- <img src="img/reinspections.png" class="img-fluid" alt="" height=700 width=700> -->
-        <iframe src="graphs/reinspections.html" height="700" width="700" style="border:none;"></iframe>
+        <iframe src="graphs/reinspections.html" height="500" width="700" style="border:none;"></iframe>
       </div>
 
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <iframe src="graphs/risk.html" height="600" width="700" style="border:none;"></iframe>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4> Risk </h4>
@@ -124,8 +124,6 @@
 	                <p><strong>Some insights:</strong> Surprisingly, establishments with the highest risk seem to get the least fails. This might be due to their awareness of matter and hence their care in maintaining their sanitation.Establishments with the highest risk also get the highest proportion of passes with conditions. This could mean that inspectors might be less severe with them given that it is very challenging to maintain such a risky establishment. The proportion of passes seems independent of the risk of the facility.</p>
           </div>
         </div>
-        <!-- <img src="img/risk.png" class="img-fluid" alt="" height=700 width=700> -->
-        <iframe src="graphs/risk.html" height="700" width="700" style="border:none;"></iframe>
       </div>
 
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
@@ -136,11 +134,12 @@
           </div>
         </div>
         <!-- <img src="img/cuisine.png" class="img-fluid" alt="" height=700 width=700> -->
-        <iframe src="graphs/cuisine.html" height="700" width="700" style="border:none;"></iframe>
+        <iframe src="graphs/cuisine.html" height="550" width="700" style="border:none;"></iframe>
       </div>      
 
 
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <iframe src="graphs/price.html" height="500" width="700" style="border:none;"></iframe>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4> Price range </h4>
@@ -148,8 +147,6 @@
 	                <p><strong>Some insights:</strong> We would have expected the cheapest restaurants to have the highest fail proportion, but this is not the case: the price range actually does not influence on inspection outcomes.</p>
           </div>
         </div>
-        <!-- <img src="img/Price.png" class="img-fluid" alt="" height=700 width=700> -->
-        <iframe src="graphs/price.html" height="700" width="700" style="border:none;"></iframe>
       </div>  
 
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
@@ -160,7 +157,7 @@
           </div>
         </div>
         <!-- <img src="img/rating.png" class="img-fluid" alt="" height=700 width=700> -->
-        <iframe src="graphs/userrating.html" height="700" width="700" style="border:none;"></iframe>
+        <iframe src="graphs/userrating.html" height="500" width="700" style="border:none;"></iframe>
       </div>      
 
             <!-- FOOD DESERTS -->
@@ -191,7 +188,6 @@
       <div>
       	<p>We certainly see a difference in the concentration of grocery stores between the North and the South, the south being quite sparse.</p>
       	<p class="mb-0 text-black-50 text-lg-left"><i>Chicago’s segregation is certainly legendary, with the North and South sides divided by class and race. To keep it stereotypically simple: The North Side is white, the South Side is black. -Ashok Selvam, Senior Editor Eater Chicago</i></p>
-      	<hr>	
       </div>
 
 	<div class="row align-items-center no-gutters mb-4 mb-lg-5">
@@ -217,9 +213,21 @@
         <!-- <div class="col-xl-4 col-lg-5  order-lg-first"> -->
         <div class="featured-text text-center text-lg-left">
             <h4> Interactive map</h4>
-            <p class="text-black-70 mb-0"> Based on the Chicago Food Inspection data, we compiled a score for several food esablishments in Chicago. This score was heavily influenced by the violations that the inspectors identified at the time of the inspection and whether they were critical or not. Add details here about violations & food poisoning.  
+
+            <h5>A Technical Score...</h5>
+            <p class="text-black-70 mb-0">Based on the Chicago Food Inspection data, we compiled a score for several food esablishments in Chicago. This score was heavily influenced by the <strong>violations</strong> commited at the time of the inspection, and whether they were <strong>critical</strong> or not. This score also takes into account whether there were cases of <strong>food poisoning</strong>, or if there were any <strong>"hidden allergens"</strong> in the establishment. 
             </p>
-            <p class="text-black-70 mb-0"> This score can also be influenced by the opinion of the Yelp community. If you choose to, the map below can take into account the ratings of the establishments present on Yelp. 
+
+            <p align="center">
+			<iframe src="graphs/technical_score_pie.html"height="400" width="1000" style="border:none;"></iframe>
+
+            </p>
+
+            	
+
+
+            <h5>... combined with the community opinion</h5>
+            <p class="text-black-70 mb-0"> The score can also be influenced by the opinion of the Yelp community. The map below can take into account the ratings of the establishments present on Yelp: simply use the slider to <strong>select the importance attributed</strong> to this average rating.</p> <p class="text-black-70 mb-0">Selecting 0 will result in a Total Score equal to the technical score, whereas selecting 5 will result in a  Total Score where the Technical Score is as important as the User Score.
             </p>
 
             <!-- 
@@ -237,7 +245,7 @@
 			</select>
 			<p id="interactive-map" class="text-black-70 mb-0"></p>
 		-->
-			<p>
+			<p align="center">
 			<iframe src="maps/scores_map_slider.html"height="2000" width="1000" style="border:none;"></iframe>
 		</p>
 
