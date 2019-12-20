@@ -80,26 +80,37 @@
 
   <!-- Projects Section -->
   <section id="projects" class="projects-section bg-light">
+
     <div class="container">
+  	<hr>
+  	<h3><strong>The data </strong>: where our journey starts.</h3>
+    <hr>
+    <p class="text-black-70 mb-0"> Our starting point is the Chicago Food Inspection data, which contains up-to-date information from inspections of restaurants and other food establishments in Chicago from January 1, 2010 to the present. As we will see further down, each inspection is accompanied by precious information about the facility like its location or its type ( restaurant, medical establishment, school...). The inspection outcome depends on whether the establishemnt was found to have any of the 45 possible violations, and the result can be either of the following:
+    <ul>
+	  <font color="green"><li><strong>Pass</strong>: No critical or serious violations</li></font>
+	  <font color="orange"><li><strong>Pass With Conditions</strong>: Presence of criticial or serious violations, but those were corrected during the inspection</li></font>
+	  <font color="red"><li><strong>Fail</strong>: Critical or serious violations that were dangerous for the public health</li></font>
+	</ul> 
+    </p>
 
       <!-- FEATURE EFFECTS -->
-      <hr>
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="featured-text text-center text-lg-left">
-            <h4>Do facility attributes influence food inspection outcomes for establishments in Chicago?</h4>
-            <p class="text-black-70 mb-0">In this part of our research, we tried to get familiar with how inspection outcomes differ according to different establishment and inspection features. We also tried to examine and analyze the performance evolution of facilities in Chicago.
-            </p>
-            <!-- <iframe src="file:///C:/Users/lilia/OneDrive/Documents/ADA_2019/GREYSCALE_survive-eating-out-chicago.github.io/test_page.html" height="500" width="1500" style="border:none;></iframe> --> 
-            <div id="my_dataviz"></div>
-          </div>
-      </div>
+      <!-- <div class="row align-items-center no-gutters mb-4 mb-lg-5"> -->
+        <!-- <div class="featured-text text-center text-lg-left"> -->
+    <hr>
+    <h3><strong>Facility Attributes</strong>: do they influence food inspection outcomes ?</h3>
+    <hr>
+    <p class="text-black-70 mb-0">In this part of our research, we tried to get familiar with how inspection outcomes differ according to different establishment and inspection features. We also tried to examine and analyze the performance evolution of facilities in Chicago.
+    </p>
+          <!-- </div> -->
+      <!-- </div> -->
 
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <iframe src="graphs/facilitytype.html" height="700" width="700" style="border:none;"></iframe>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4> Establishment types</h4>
-            <p class="text-black-70 mb-0">Does <strong>the type of an establishment</strong> influence its inspection outcome? </p><p> <strong>Some insights:</strong> Medical establishments do not get passes with conditions. They either get passes or fails. This makes sense as food sanitation is a top priority in medical establishments given that most of their customers are patients.Medical establishments also have the highest number of failed inspections. This might be due to a stricter approach taken with them given that food cleaniness is the top priority for such facilities.On average the proportions of results seem very different in terms of type of establishment. But we can notice establishment types which form groups that have similar distributions of results. For example, restaurants, religious establishments and retirement homes seem to have very similar result distributions.</p> 
+            <p class="text-black-70 mb-0">Does <strong>the type of an establishment</strong> influence its inspection outcome? </p><p> <strong>Some insights:</strong> Food cleaniness is a top priority in the medical world and there is no room for error. Medical establishments can not get passes with conditions: they either pass or fail the inspections. This strict approach might explain that they have the highest proportion of fails.</p>
+             <p>On average the proportions of results seem very different in terms of type of establishment. But we can notice establishment types which form groups that have similar distributions of results. For example, restaurants, religious establishments and retirement homes seem to have very similar result distributions.</p> 
           </div>
         </div>
       </div>
@@ -108,7 +119,7 @@
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4> Reinspections </h4>
-            <p class="text-black-70 mb-0">Are <strong>reinspections</strong> always a <strong>success ?</strong> <p><strong>Some insights:</strong> The proportion of facilities which get a pass in reinspection is bigger than that which gets a pass at the first inspection. This makes sense as establishments take into consideration the comments given by the inspector for the reinspection. We can alse see that the proportion of passes with conditions is smaller for the reinspections. This makes sense as giving such a result would mean giving establishments "a third chance".</p>
+            <p class="text-black-70 mb-0">Are <strong>reinspections</strong> always a <strong>success ?</strong> <p> The proportion of facilities which get a pass in reinspection is bigger than that which gets a pass at the first inspection. This makes sense as establishments take into consideration the comments given by the inspector for the reinspection. We can alse see that the proportion of passes with conditions is smaller for the reinspections. This makes sense as giving such a result would mean giving establishments "a third chance".</p>
           </div>
         </div>
         <!-- <img src="img/reinspections.png" class="img-fluid" alt="" height=700 width=700> -->
@@ -161,16 +172,15 @@
       </div>      
 
             <!-- FOOD DESERTS -->
+      <!-- <div class="row align-items-center no-gutters mb-4 mb-lg-5"> -->
+        <!-- <div class="featured-text text-center text-lg-left"> -->
+        	<hr>
+            <h3><strong>Food Deserts </strong>: An indicator of social segreggation ?</h3>
             <hr>
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="featured-text text-center text-lg-left">
-            <h4> Food Deserts : An indicator of social segreggation ?</h4>
             <p class="text-black-70 mb-0"> We often expect to find diverse and numerous food places in big cities. However, we found out that in some areas of Chicago, residents are <strong> lacking access to healthy and affordable food options </strong> due to the <strong> absence of grocery stores within convenient travelling distance. </strong> This phenomenon is referred to as Food Desert, a.k.a. food apartheid. Furthermore,  in a <a href="https://www.usccr.gov/pubs/docs/IL-FoodDeserts-2011.pdf">report by the Illinois Advisory Committee to the United States Commission on Civil Rights</a>, it is stated that these food desert neighborhoods are almost exclusively in African American neighborhoods making the issue a civil rights one beyond its public health dimension.
             </p>
-            <!-- <iframe src="file:///C:/Users/lilia/OneDrive/Documents/ADA_2019/GREYSCALE_survive-eating-out-chicago.github.io/test_page.html" height="500" width="1500" style="border:none;></iframe> --> 
-            <div id="my_dataviz"></div>
-          </div>
-      </div>
+          <!-- </div> --> 
+      <!-- </div> -->
 
       <!-- Food Deserts map -->
 
@@ -197,7 +207,6 @@
 		<iframe src="graphs/ethnicity_pie.html" height="450" width="710" align="right" style="border:none;"></iframe>
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <iframe src="maps/ethnicity_map.html" height="500" width="350" align="right" style="border:none;"></iframe>
-
       </div>  
 
               
@@ -207,14 +216,17 @@
 
 
 <!------------------------- SCORE ------------------------->
-<hr>
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+      <!-- <div class="row align-items-center no-gutters mb-4 mb-lg-5"> -->
         <!-- <div class="col-xl-4 col-lg-5  order-lg-first"> -->
-        <div class="featured-text text-center text-lg-left">
-            <h4> Interactive map</h4>
+        <!-- <div class="featured-text text-center text-lg-left"> -->
+        	<hr>
+            <h3> <strong>A guide to eat out In Chicago</strong></h3>
+            <hr>
 
-            <h5>A Technical Score...</h5>
-            <p class="text-black-70 mb-0">Based on the Chicago Food Inspection data, we compiled a score for several food esablishments in Chicago. This score was heavily influenced by the <strong>violations</strong> commited at the time of the inspection, and whether they were <strong>critical</strong> or not. This score also takes into account whether there were cases of <strong>food poisoning</strong>, or if there were any <strong>"hidden allergens"</strong> in the establishment. 
+            <h5><strong><i> A Technical Score</i></strong>...</h5>
+            <p class="text-black-70 mb-0">Based on the Chicago Food Inspection data, we compiled a score for several food esablishments in Chicago. This score was heavily influenced by the <strong>violations</strong> commited at the time of the inspection, and whether they were <strong>critical</strong> or not. <a href="https://webapps1.chicago.gov/healthinspection/Code_Violations.jsp#critical"> Critical violations</a> include improper personal hygiene or rodent and/or insect infestation. <a href="https://webapps1.chicago.gov/healthinspection/Code_Violations.jspl"> <strong>Serious</strong> and <strong>monderate</strong> violations</a> include no proper protection from contamination or poorly constructed walls. CRITICAL VIOLATIONS MORE WEIGHT THAN MODERATE
+            </p>
+             <p class="text-black-70 mb-0">The technical score takes into account whether there were cases of <strong>food poisoning</strong> caused by the establishment, or if there were any <strong>"hidden allergens"</strong> in the establishment. 
             </p>
 
             <p align="center">
@@ -225,9 +237,11 @@
             	
 
 
-            <h5>... combined with the community opinion</h5>
-            <p class="text-black-70 mb-0"> The score can also be influenced by the opinion of the Yelp community. The map below can take into account the ratings of the establishments present on Yelp: simply use the slider to <strong>select the importance attributed</strong> to this average rating.</p> <p class="text-black-70 mb-0">Selecting 0 will result in a Total Score equal to the technical score, whereas selecting 5 will result in a  Total Score where the Technical Score is as important as the User Score.
+            <h5><strong><i>... combined with the community's opinion</i></strong></h5>
+            <p class="text-black-70 mb-0"> The score can also be influenced by the opinion of the Yelp community. The map below can take into account the ratings of the establishments present on Yelp: simply use the slider to <strong>select the importance attributed to this average rating.</strong></p> <p class="text-black-70 mb-0">Selecting 0 will result in a Total Score equal to the technical score, whereas selecting 5 will result in a  Total Score where the Technical Score is as important as the User Score.
             </p>
+            <p>
+            	Total Score = (\(1 - \alpha \)) Technical Score + \(\alpha\) Yelp Score</p>
 
             <!-- 
             <label for="crime">User rating importance:</label>
@@ -253,9 +267,9 @@
             <!-- <iframe src="file:///C:/Users/lilia/OneDrive/Documents/ADA_2019/GREYSCALE_survive-eating-out-chicago.github.io/test_page.html" height="500" width="1500" style="border:none;></iframe> --> 
             <!-- <div id="my_dataviz"></div> -->
 
-          </div>
+          <!-- </div> -->
         <!-- </div> -->
-      </div>
+      <!-- </div> -->
     </div>
 
 
@@ -280,24 +294,13 @@
   <!-- Load d3.js -->
   <script src="https://d3js.org/d3.v4.js"></script>
 
+  <!-- Load MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
   <script src="js/establishment_type.js"></script>
-
-  <!-- Script: Drop-down menu for community area -->
-  <!-- 
-  <script >
-  	d3.select("#interactive-map").text("first");
-
-	d3.select("select")
-	.on("change",function(d){
-		    var selected = d3.select("#d3-dropdown-com-area").node().value;
-		    console.log( selected );
-		    d3.select("#interactive-map").text(selected);
-		})
-	</script>										--> 
-
-
 
 
 </body>
