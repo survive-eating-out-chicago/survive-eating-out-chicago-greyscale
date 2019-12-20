@@ -70,8 +70,9 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2 class="text-white mb-4">Abstract</h2>
-          <p class="text-white-50 mb-4">In this day and age, restaurants and other food establishments are part of our daily lives. In this project, we try to understand which <strong> factors</strong> are most at stake when talking about<strong> food safety</strong>. In the process, we will also take a detour and use socio-economic indicators of Chicago community areas in order to see if <strong>eating safely is equally accessible</strong> to everyone and if our dataset supports the existence of "food deserts".</p>
-          <p class="text-white-50 mb-4">Our ultimate aim is to promote public health by providing a reliable recommendation system for eating out in Chicago, based on a "safety score" that we will compute using the information from inspections as well as other metrics that will prove useful during analysis.</p>
+          <p class="text-white-50 mb-4">Nowadays, food establishemnts such as restaurants have become part of our daily lives. Chicago is a great example of a big city which gathers a huge variety of such establishments. As such, we focus our project on facilities located there.</p>
+          <p class="text-white-50 mb-4">In this project, we firstly try to understand which <strong>factors</strong> are most at stake when talking about <strong>food safety</strong> in food establishments in Chicago. In the process, we also take a detour and use socio-economic indicators of Chicago community areas in order to see if <strong>eating safely is equally accessible</strong> to all members of society. To this end, we will see whether our dataset supports the existence of "food deserts" in Chicago.</p>
+          <p class="text-white-50 mb-4">Our ultimate aim is to promote public health by providing a reliable recommendation system for eating out in Chicago, based on a <i>Safety Score</i> that we compute using the information from inspections as well as other metrics that prove useful during analysis.</p>
         </div>
       </div>
       <!-- <img src="img/chcago.jpg" class="img-fluid" alt=""> -->
@@ -83,13 +84,13 @@
 
     <div class="container">
   	<hr>
-  	<h3><strong>The data </strong>: where our journey starts.</h3>
+  	<h3><strong>The data</strong></h3><!---where our journey starts.</h3>-->
     <hr>
-    <p class="text-black-70 mb-0"> Our starting point is the Chicago Food Inspection data, which contains up-to-date information from inspections of restaurants and other food establishments in Chicago from January 1, 2010 to the present. As we will see further down, each inspection is accompanied by precious information about the facility like its location or its type ( restaurant, medical establishment, school...). The inspection outcome depends on whether the establishemnt was found to have any of the 45 possible violations, and the result can be either of the following:
+    <p class="text-black-70 mb-0"> Our starting point is the Chicago Food Inspection data set, which contains information about the inspections of food establishments in Chicago from January 1, 2010 up to the present. As we will see further down, each inspection is accompanied by information about the inspected facility such as its location and its type (restaurant, medical establishment, school...). The inspection outcome depends on whether the establishemnt was found to have any of the 45 possible violations, and the result can be either of the following:
     <ul>
 	  <font color="green"><li><strong>Pass</strong>: No critical or serious violations</li></font>
-	  <font color="orange"><li><strong>Pass With Conditions</strong>: Presence of criticial or serious violations, but those were corrected during the inspection</li></font>
-	  <font color="red"><li><strong>Fail</strong>: Critical or serious violations that were dangerous for the public health</li></font>
+	  <font color="orange"><li><strong>Pass With Conditions</strong>: Criticial or serious violations found, but corrected during inspection</li></font>
+	  <font color="red"><li><strong>Fail</strong>: Critical or serious violations, dangerous for the public health, found during inspection</li></font>
 	</ul> 
     </p>
 
@@ -97,9 +98,9 @@
       <!-- <div class="row align-items-center no-gutters mb-4 mb-lg-5"> -->
         <!-- <div class="featured-text text-center text-lg-left"> -->
     <hr>
-    <h3><strong>Facility Attributes</strong>: do they influence food inspection outcomes ?</h3>
+    <h3>Do <strong>facility attributes</strong> influence food inspection outcomes for establishments in Chicago?</h3>
     <hr>
-    <p class="text-black-70 mb-0">In this part of our research, we tried to get familiar with how inspection outcomes differ according to different establishment and inspection features. We also tried to examine and analyze the performance evolution of facilities in Chicago.
+    <p class="text-black-70 mb-0">In this part of our research, we got familiar with how inspection outcomes differ according to various establishment and inspection features. We also examined and analyzed the performance evolution of facilities in Chicago.
     </p>
           <!-- </div> -->
       <!-- </div> -->
@@ -109,8 +110,8 @@
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4> Establishment types</h4>
-            <p class="text-black-70 mb-0">Does <strong>the type of an establishment</strong> influence its inspection outcome? </p><p> <strong>Some insights:</strong> Food cleaniness is a top priority in the medical world and there is no room for error. Medical establishments can not get passes with conditions: they either pass or fail the inspections. This strict approach might explain that they have the highest proportion of fails.</p>
-             <p>On average the proportions of results seem very different in terms of type of establishment. But we can notice establishment types which form groups that have similar distributions of results. For example, restaurants, religious establishments and retirement homes seem to have very similar result distributions.</p> 
+            <p class="text-black-70 mb-0">Does <strong>the type of an establishment</strong> influence its inspection outcome?</p><p> <strong>Some insights:</strong> Food cleanliness is a top priority in the medical world and there is no room for error. Medical establishments can not get passes with conditions: they either pass or fail the inspections. This strict approach might explain why they have the highest proportion of fails.</p>
+             <p>On average the proportions of results seem very different in terms of type of establishment. But we can notice establishment types which form groups that have similar distributions of inspection outcomes. For example, restaurants, religious establishments and retirement homes seem to have very similar result distributions.</p> 
           </div>
         </div>
       </div>
@@ -119,13 +120,15 @@
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4> Reinspections </h4>
-            <p class="text-black-70 mb-0">Are <strong>reinspections</strong> always a <strong>success ?</strong> <p> The proportion of facilities which get a pass in reinspection is bigger than that which gets a pass at the first inspection. This makes sense as establishments take into consideration the comments given by the inspector for the reinspection. We can alse see that the proportion of passes with conditions is smaller for the reinspections. This makes sense as giving such a result would mean giving establishments "a third chance".</p>
+            <p class="text-black-70 mb-0">Are <strong>reinspections</strong> always a <strong>success</strong>? <p>Reinspections correspond to inspections that establishments get for a second time, typically after a fail.</p>
+            <p>The proportion of facilities which get a pass in their reinspection is bigger than that which get a pass at their first inspection. This makes sense as establishments take into consideration the comments given by the inspectors before their reinspections.</p>
+            <p>We can alse see that the proportion of passes with conditions is smaller for the reinspections. This makes sense as giving such a result would mean giving establishments "a third chance".</p>
           </div>
         </div>
         <!-- <img src="img/reinspections.png" class="img-fluid" alt="" height=700 width=700> -->
         <iframe src="graphs/reinspections.html" height="500" width="700" style="border:none;"></iframe>
       </div>
-
+<!--ANDRE CLEANED UP TO HERE!!!!!!!!!!!!!!!!!!!!-->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <iframe src="graphs/risk.html" height="600" width="700" style="border:none;"></iframe>
         <div class="col-xl-4 col-lg-5">
