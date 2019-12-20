@@ -71,7 +71,7 @@
         <div class="col-lg-8 mx-auto">
           <h2 class="text-white mb-4">Abstract</h2>
           <p class="text-white-50 mb-4">Nowadays, food establishemnts such as restaurants have become part of our daily lives. Chicago is a great example of a big city which gathers a huge variety of such establishments. As such, we focus our project on facilities located there.</p>
-          <p class="text-white-50 mb-4">In this project, we firstly try to understand which <strong>factors</strong> are most at stake when talking about <strong>food safety</strong> in food establishments in Chicago. In the process, we also take a detour and use socio-economic indicators of Chicago community areas in order to see if <strong>eating safely is equally accessible</strong> to all members of society. To this end, we will see whether our dataset supports the existence of "food deserts" in Chicago.</p>
+          <p class="text-white-50 mb-4">In this project, we firstly try to understand which <strong>factors</strong> are most at stake when talking about <strong>food safety</strong> in food establishments in Chicago. In the process, we also take a detour and use socio-economic indicators of Chicago community areas in order to see if <strong>eating safely is equally accessible</strong> to all members of society. To this end, we will see whether our dataset supports the existence of <i>food deserts</i> in Chicago.</p>
           <p class="text-white-50 mb-4">Our ultimate aim is to promote public health by providing a reliable recommendation system for eating out in Chicago, based on a <i>Safety Score</i> that we compute using the information from inspections as well as other metrics that prove useful during analysis.</p>
         </div>
       </div>
@@ -110,8 +110,8 @@
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4> Establishment types</h4>
-            <p class="text-black-70 mb-0">Does <strong>the type of an establishment</strong> influence its inspection outcome?</p><p> <strong>Some insights:</strong> Food cleanliness is a top priority in the medical world and there is no room for error. Medical establishments can not get passes with conditions: they either pass or fail the inspections. This strict approach might explain why they have the highest proportion of fails.</p>
-             <p>On average the proportions of results seem very different in terms of type of establishment. But we can notice establishment types which form groups that have similar distributions of inspection outcomes. For example, restaurants, religious establishments and retirement homes seem to have very similar result distributions.</p> 
+            <p class="text-black-70 mb-0">Does <strong>the type of an establishment</strong> influence its inspection outcome?</p><br><p> <strong>Some insights:</strong><br>Food cleanliness is a top priority in the medical world and there is no room for error. Medical establishments can not get passes with conditions: they either pass or fail the inspections. This strict approach might explain why they have the highest proportion of fails.</p>
+             <!-- <p>On average the proportions of results seem very different in terms of type of establishment. But we can notice establishment types which form groups that have similar distributions of inspection outcomes. For example, restaurants, religious establishments and retirement homes seem to have very similar result distributions.</p>  -->
           </div>
         </div>
       </div>
@@ -121,21 +121,21 @@
           <div class="featured-text text-center text-lg-left">
             <h4> Reinspections </h4>
             <p class="text-black-70 mb-0">Are <strong>reinspections</strong> always a <strong>success</strong>? <p>Reinspections correspond to inspections that establishments get for a second time, typically after a fail.</p>
-            <p>The proportion of facilities which get a pass in their reinspection is bigger than that which get a pass at their first inspection. This makes sense as establishments take into consideration the comments given by the inspectors before their reinspections.</p>
-            <p>We can alse see that the proportion of passes with conditions is smaller for the reinspections. This makes sense as giving such a result would mean giving establishments "a third chance".</p>
+            <p><strong>Some insights:</strong><br>The proportion of facilities which get a pass in their reinspection is bigger than that which get a pass at their first inspection. This makes sense as establishments take into consideration the comments given by the inspectors before their reinspections.
+            <br>We can alse see that the proportion of passes with conditions is smaller for the reinspections. This makes sense as giving such a result would mean giving establishments "a third chance".</p>
           </div>
         </div>
         <!-- <img src="img/reinspections.png" class="img-fluid" alt="" height=700 width=700> -->
         <iframe src="graphs/reinspections.html" height="500" width="700" style="border:none;"></iframe>
       </div>
-<!--ANDRE CLEANED UP TO HERE!!!!!!!!!!!!!!!!!!!!-->
+
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <iframe src="graphs/risk.html" height="600" width="700" style="border:none;"></iframe>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4> Risk </h4>
-            <p class="text-black-70 mb-0">  Each establishment is categorized as to its risk of affecting the public’s health, with 1 being the highest and 3 the lowest. The <strong>frequency of inspection</strong>  is <strong>tied to this risk.</strong></p>
-	                <p><strong>Some insights:</strong> Surprisingly, establishments with the highest risk seem to get the least fails. This might be due to their awareness of matter and hence their care in maintaining their sanitation.Establishments with the highest risk also get the highest proportion of passes with conditions. This could mean that inspectors might be less severe with them given that it is very challenging to maintain such a risky establishment. The proportion of passes seems independent of the risk of the facility.</p>
+            <p class="text-black-70 mb-0"> Each establishment is classified into one of three risk categories according to its likelihood of affecting the public’s health. Category 1 being the highest in terms of risk and 3 the lowest. The <strong>inspection frequency</strong> is <strong>tied to this risk.</strong></p><br>
+	                <p><strong>Some insights:</strong><br>Surprisingly, the riskiest establishments seem to get the least fails. This might be due to their awareness of the matter and hence their care in maintaining their sanitation.<br>Establishments with the highest risk also get the highest proportion of passes with conditions. This could mean that inspectors might be less severe with them given that it is very challenging to maintain such a risky establishment.<br>The proportion of passes seems independent of the risk of the facility.</p>
           </div>
         </div>
       </div>
@@ -144,21 +144,20 @@
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4> Cuisine </h4>
-            <p class="text-black-70 mb-0">  There are several stereotypes about certain cuisines being riskier than others. However, the food inspection results might surprise you ... </p>
+            <p class="text-black-70 mb-0"> There are several stereotypes about certain cuisines being riskier than others. However, the food inspection results <strong>might surprise you...</strong></p>
           </div>
         </div>
         <!-- <img src="img/cuisine.png" class="img-fluid" alt="" height=700 width=700> -->
         <iframe src="graphs/cuisine.html" height="550" width="700" style="border:none;"></iframe>
       </div>      
 
-
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <iframe src="graphs/price.html" height="500" width="700" style="border:none;"></iframe>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4> Price range </h4>
-            <p class="text-black-70 mb-0">  Does <strong>pricier</strong> imply <strong>safer </strong>? </p>
-	                <p><strong>Some insights:</strong> We would have expected the cheapest restaurants to have the highest fail proportion, but this is not the case: the price range actually does not influence on inspection outcomes.</p>
+            <p class="text-black-70 mb-0">Does <strong>pricier</strong> imply <strong>safer</strong>?</p><br>
+	                <p><strong>Some insights:</strong><br>We would expect the cheapest restaurants to have the highest fail proportion. But this is not the case: the price range actually does not influence inspection outcomes.</p>
           </div>
         </div>
       </div>  
@@ -166,8 +165,8 @@
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
-            <h4> Yelp average user rating </h4>
-            <p class="text-black-70 mb-0"> Rating given by the community certainly reflect the establishments quality, but they do not always reflect the inspection outcomes.</p>
+            <h4>Yelp average user rating</h4>
+            <p class="text-black-70 mb-0">Ratings given by the community certainly reflect the establishments quality, but they do <strong>not always reflect</strong> the inspection outcomes. For instance, establishments with a 4.5 rating have <strong>more failed inspections</strong> than establishments with a 4.0 rating.</p>
           </div>
         </div>
         <!-- <img src="img/rating.png" class="img-fluid" alt="" height=700 width=700> -->
@@ -178,9 +177,9 @@
       <!-- <div class="row align-items-center no-gutters mb-4 mb-lg-5"> -->
         <!-- <div class="featured-text text-center text-lg-left"> -->
         	<hr>
-            <h3><strong>Food Deserts </strong>: An indicator of social segreggation ?</h3>
+            <h3><strong><i>Food deserts</i></strong>: An indicator of social segreggation?</h3>
             <hr>
-            <p class="text-black-70 mb-0"> We often expect to find diverse and numerous food places in big cities. However, we found out that in some areas of Chicago, residents are <strong> lacking access to healthy and affordable food options </strong> due to the <strong> absence of grocery stores within convenient travelling distance. </strong> This phenomenon is referred to as Food Desert, a.k.a. food apartheid. Furthermore,  in a <a href="https://www.usccr.gov/pubs/docs/IL-FoodDeserts-2011.pdf">report by the Illinois Advisory Committee to the United States Commission on Civil Rights</a>, it is stated that these food desert neighborhoods are almost exclusively in African American neighborhoods making the issue a civil rights one beyond its public health dimension.
+            <p class="text-black-70 mb-0"> We often expect to find diverse and numerous food places in big cities. However, we found that in some areas of Chicago, residents are <strong> lacking access to healthy and affordable food options </strong> due to the <strong> absence of grocery stores within convenient travelling distance. </strong> This phenomenon is referred to as a <i>food desert</i>, a.k.a. food apartheid. Further, in a <a href="https://www.usccr.gov/pubs/docs/IL-FoodDeserts-2011.pdf">report by the Illinois Advisory Committee to the United States Commission on Civil Rights</a>, it is stated that these <i>food desert</i> neighborhoods are almost exclusively in African American neighborhoods making the issue a civil rights one beyond its public health dimension.
             </p>
           <!-- </div> --> 
       <!-- </div> -->
@@ -190,49 +189,66 @@
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
-            <h4> Can we visualize Food Deserts? </h4>
-            <p class="text-black-70 mb-0"> Let's take a look at establishments that represent <strong> healthy food providers </strong>(grocery store, farmer's market, fish market, meat market, etc). We retrieve these establishments from inspection dataset and plot their density by surface for Chicago's community areas. </p>
+            <h4> Can we visualize <i>food deserts</i>? </h4>
+            <p class="text-black-70 mb-0">Let's take a look at establishments that represent <strong>healthy food providers</strong> (grocery stores, farmer's markets, fish markets, meat markets...). We retrieve these establishments from the inspection dataset<sup><a href="#fn1" id="ref1">1</a></sup> and plot their density by surface for Chicago's community areas. </p>
             <br>
-            <p>We certainly see a difference in the concentration of grocery stores between the North and the South, the south being quite sparse.</p>
+            <p>We certainly see a difference in the concentration of grocery stores between the North and the South, the south being quite sparse.
+              <hr>
+              <sup id="fn1">1. This is an inspection-centered data set rather than an establishment-centered data set. However, even if there are more establishments than those in our data set, they do not get regularly inspected, which poses an even bigger problem than the one we tackle.<a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup>
+            </p>
           </div>
         </div>
           <iframe src="maps/groceries_by_community.html" height="500" width="600" style="border:none;"></iframe>
-      </div>     
+      </div>
+
+      <!--ANDRE CLEANED UP TO HERE!!!!!!!!!!!!!!!!!!!!-->
 
 <br>
       <div>
-      	<p class="mb-0 text-black-50 text-lg-left"><font size=5><i>“Chicago’s segregation is certainly legendary, with the North and South sides divided by class and race. To keep it stereotypically simple: The North Side is white, the South Side is black.” -Ashok Selvam, Senior Editor Eater Chicago</i></font> </p>
+      	<p class="mb-0 text-black-50 text-lg-left"><font size=5><i>“Chicago’s segregation is certainly legendary, with the North and South sides divided by class and race. To keep it stereotypically simple: The North Side is white, the South Side is black.”<br>- Ashok Selvam, Senior Editor Eater Chicago</i></font> </p>
       </div>
 <br>
        <div>
-      	<p class="text-black-70 mb-0">  In order to get more in-depth knowledge about this subject, we look at the <strong> community areas by their majority ethnicity</strong>.
-          <br> Even though Chicago's population is divided in three almost equal proportions of Black, White and Latino people, with a minority of Asians, we clearly  see a separation between the North and the South, the South being majoritarily Black, the North White and the West Latino. Looking closely you can even notice that a great number of the community areas have very high rates of a single ethnicity.</p>
+      	<p class="text-black-70 mb-0">Chicago is the perfect example of a melting pot, with almost even proportions of African American, White and Latino people and a minority of Asians. However, the map below shows us that there is a clear separation between the North and the South, the South having mostly African American neighborhoods, the North mostly White neighborhoods and the West Latino neighborhoods.</p>
       </div>
       <br>
-        	
-		<iframe src="graphs/ethnicity_pie.html" height="450" width="710" align="right" style="border:none;"></iframe>
+          
+		<iframe src="graphs/ethnicity_pie.html" height="450" width="700" align="right" style="position: relative; right: 60px; border:none"></iframe>
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <iframe src="maps/ethnicity_map.html" height="500" width="350" align="right" style="border:none;"></iframe>
-      </div>  
-
+          <iframe src="maps/ethnicity_map.html" height="500" width="1000" align="right" style="border:none;"></iframe>
+      </div>
+          <div>
+            <h4>What is the reason behind the <i>food deserts</i>?</h4>
+            <p class="text-black-70 mb-0">As we can see below, the grocery stores' density is <strong>positively correlated</strong> with <strong>Population Count</strong> by community area as well as with <strong>Per Capita Income</strong>. It is on the other hand <strong>negatively correlated</strong> with <strong>Below Poverty Level</strong>. These observations make sense if we think about grocery stores wanting to maximize their profit.
+              <a href="https://en.wikipedia.org/wiki/Supermarket_shortage">"Grocery stores typically have only 1-2% profit margins, so the difficulties involved in running an urban supermarket are often seen as too costly in an already-risky business."</a>
+              <!-- <sup><a href="#fn2" id="ref2">2</a></sup> -->
+              <br>
+              A solution that the Illinois State could put into practice is the <a href="http://www.nyc.gov/html/misc/pdf/fresh_fact_sheet_eng.pdf">one implemented</a> in the state of New York: "providing zoning and financial incentives to grocery stores in underserved communities".
+          <!-- <sup id="fn2"><a href="https://en.wikipedia.org/wiki/Supermarket_shortage">Supermarket Shortage</a><a href="#ref2" title="Jump back to footnote 1 in the text.">↩</a></sup> -->
+        <br>
+      </div>
+      <div style="display:block;width: 1400px; height: 500px; overflow: hidden">
+          <iframe style="position: relative; left: -135px" src="graphs/new_indicators.html" allowfullscreen="true" frameborder="0" height="500" frameborder="0" width="1400" scolling="no">
+          </iframe>
+      </div>
+      <!-- <div>
+          <p><iframe src="graphs/new_indicators.html" height="500" width="1100" align="right" style="border:none;"></iframe></p>
+        </div> -->
+      <br>
               
-
-
-
-
-
 <!------------------------- SCORE ------------------------->
       <!-- <div class="row align-items-center no-gutters mb-4 mb-lg-5"> -->
         <!-- <div class="col-xl-4 col-lg-5  order-lg-first"> -->
         <!-- <div class="featured-text text-center text-lg-left"> -->
-        	<hr>
-            <h3> <strong>A guide to eat out In Chicago</strong></h3>
+          <div>
+          <hr>
+            <h3>
+              <strong>A guide to eating out in Chicago: an indicative score made out of...</strong></h3>
             <hr>
-
-            <h5><strong><i> A Technical Score</i></strong>...</h5>
-            <p class="text-black-70 mb-0">Based on the Chicago Food Inspection data, we compiled a score for several food esablishments in Chicago. This score was heavily influenced by the <strong>violations</strong> commited at the time of the inspection, and whether they were <strong>critical</strong> or not. <a href="https://webapps1.chicago.gov/healthinspection/Code_Violations.jsp#critical"> Critical violations</a> include improper personal hygiene or rodent and/or insect infestation. <a href="https://webapps1.chicago.gov/healthinspection/Code_Violations.jspl"> <strong>Serious</strong> and <strong>monderate</strong> violations</a> include no proper protection from contamination or poorly constructed walls. CRITICAL VIOLATIONS MORE WEIGHT THAN MODERATE
-            </p>
-             <p class="text-black-70 mb-0">The technical score takes into account whether there were cases of <strong>food poisoning</strong> caused by the establishment, or if there were any <strong>"hidden allergens"</strong> in the establishment. 
+          </div>
+            <h5><strong><i>...a technical score...</i></strong>...</h5>
+            <p class="text-black-70 mb-0">We compiled a technical score for several food esablishments in Chicago. This score heavily depends on the <strong>violations</strong> committed at the time of inspection (e.g. whether they were <strong>critical</strong> or not).</p>
+            <p class="text-black-70 mb-0"><a href="https://webapps1.chicago.gov/healthinspection/Code_Violations.jsp#critical"> Critical violations</a> include improper personal hygiene or rodent and/or insect infestation. <a href="https://webapps1.chicago.gov/healthinspection/Code_Violations.jspl"> <strong>Serious</strong> and <strong>monderate</strong> violations</a> include no proper protection from contamination or poorly constructed walls. The score takes into account the severity of critical violations and hence gives bigger weights to the attributes linked to them. It also takes into account whether there were cases of <strong>food poisoning</strong> caused by the establishment, or if there were any <strong>"hidden allergens"</strong> in the establishment. The pie chart below showcases the different weights given to the parameters we use to compute our score.
             </p>
 
             <p align="center">
@@ -240,15 +256,14 @@
 
             </p>
 
-            	
 
-
-            <h5><strong><i>... combined with the community's opinion</i></strong></h5>
-            <p class="text-black-70 mb-0"> The score can also be influenced by the opinion of the Yelp community. The map below can take into account the ratings of the establishments present on Yelp: simply use the slider to <strong>select the importance attributed to this average rating.</strong></p> <p class="text-black-70 mb-0">Selecting 0 will result in a Total Score equal to the technical score, whereas selecting 5 will result in a  Total Score where the Technical Score is as important as the User Score.
+            <h5><strong><i>...combined with public opinion</i></strong></h5>
+            <p class="text-black-70 mb-0">The final score takes into account the opinion of the Yelp community by using the average user establishment rating. The map below showcases the final score. Simply use the slider to <strong>select the importance attributed to the user rating.</strong></p> <p class="text-black-70 mb-0">For example, selecting 0% will result in a total score that is equal to the technical score, whereas selecting 100% will result in a total score that is the user rating.
             </p>
             <p>
-            	<!-- The following formula is displayed with the MathJax script -->
-            	Total Score = (\(1 - \alpha \)) Technical Score + \(\alpha\) Yelp Score</p>
+              <!-- The following formula is displayed with the MathJax script -->
+              Our final score follows this simple formula.<br>
+            	<center>Total Score = (\(1 - \alpha \)) [Technical Score] + \(\alpha\) [Yelp Score]</center><br> where \(\alpha\) is the importance given by the slider.
 
             <!-- 
             <label for="crime">User rating importance:</label>
